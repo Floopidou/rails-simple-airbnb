@@ -1,0 +1,13 @@
+<div class="card shadow-sm">
+  <div class="card-header pb-3">
+    <h5 class="card-title"><%= flat.name %></h5>
+    <p class="card-text"><%= flat.address %></p>
+    <div class="d-flex gap-3">
+      <i class="fa-solid fa-people-line"> <%= flat.number_of_guests %></i>
+      <i class="fa-solid fa-euro-sign"> <%= flat.price_per_night %></i>
+    </div>
+  </div>
+  <div class="card-body">
+    <%= link_to "More info", flat_path(flat) %>
+  </div>
+</div>

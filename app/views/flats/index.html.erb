@@ -1,0 +1,8 @@
+<h1 class="mb-3">All my flats (<%= @flats.size %>) </h1>
+<div class="row">
+<% @flats.each do |flat| %>
+  <div class="col-4 mb-3">
+    <%= render "flatcard", flat: flat %>
+  </div>
+<% end %>
+</div>
